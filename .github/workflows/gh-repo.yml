@@ -1,4 +1,4 @@
-name: Addon Repo CI
+name: Build repo
 
 on: [push]
 
