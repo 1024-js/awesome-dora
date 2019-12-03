@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@dora-app/cli": "^1.1.2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "cover": {
+        "type": "string",
+        "default": "system",
+        "title": "封面图",
+        "options": [{
+            "value": "system",
+            "title": "系统截图"
+        }, {
+            "value": "user",
+            "title": "主播设置"
+        }]
+    },
+    "recommend": {
+        "type": "boolean",
+        "default": true,
+        "title": "是否显示推荐"
+    }
+}
