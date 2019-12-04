@@ -1,8 +1,10 @@
 {
+  "displayName": "Awesome Dora",
+  "license": "MIT",
   "scripts": {
     "build": "dora repo"
   },
   "dependencies": {
-    "@dora-app/cli": "^1.1.2"
+    "@dora-app/cli": "^1.1.3"
   }
 }

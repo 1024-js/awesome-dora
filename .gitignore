@@ -91,7 +91,6 @@ typings/
 
 .output
 
-*.lock
 *.log
 dist/
 package-lock.json
