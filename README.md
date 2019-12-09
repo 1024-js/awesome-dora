@@ -1,4 +1,5 @@
 # awesome-dora
-[Dora](https://dorajs.com/) 非官方扩展仓库
+收集 Dora.js 的仓库源、扩展
 
-源地址：`https://1024-dev.github.io/awesome-dora/index.json`
+欢迎大家创建 PR 提交你的扩展！
+本仓库源的地址：`https://1024-js.github.io/awesome-dora/index.json`
