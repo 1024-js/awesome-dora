@@ -24,7 +24,7 @@ module.exports = {
   created() {
     this.actions = [{
       title: '官方首页',
-      route: $route('@url', 'https://bilibili.com')
+      route: $route('https://bilibili.com')
     }]
   }
 }
