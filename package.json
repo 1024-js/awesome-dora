@@ -1,5 +1,5 @@
 {
-  "displayName": "1024-dev",
+  "displayName": "1024-js",
   "license": "MIT",
   "scripts": {
     "build": "dora repo"
