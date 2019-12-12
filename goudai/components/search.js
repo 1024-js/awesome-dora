@@ -1,6 +1,6 @@
 module.exports = {
-  async fetch(page) {
-    let url = `http://www.byjsj.cn/vodsearch/${encodeURI(this.args.keyword)}----------${page||''}---.html`
+  async fetch({ page, args }) {
+    let url = `http://www.byjsj.cn/vodsearch/${encodeURI(args.keyword)}----------${page||''}---.html`
     let resp = await $http.get(url)
     $ = cheerio.load(resp.data)
     var dls = $('dl')

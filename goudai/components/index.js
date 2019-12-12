@@ -1,5 +1,6 @@
 module.exports = {
   type: 'bottomTab',
+  searchRoute: $route('search'),
   fetch() {
     return [{
       title: '电影',
