@@ -3,7 +3,7 @@
   "displayName": "狗带TV",
   "version": "1.0.0",
   "uuid": "86add9e4-5e28-497a-b7bc-c478af9b4aeb",
-  "description": "",
+  "description": "狗带TV：电影、电视剧、动漫、综艺",
   "icon": "assets/icon.png",
   "prefs": "assets/prefs.json",
   "main": "main.js",
