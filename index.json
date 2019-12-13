@@ -1,0 +1,44 @@
+{
+    "displayName": "1024-js",
+    "description": "收集 Dora.js 的仓库源、扩展",
+    "version": "",
+    "license": "MIT",
+    "addons": [
+        {
+            "displayName": "B直播",
+            "uuid": "a5ae5c73-d95f-4380-8f33-c3328462e1b3",
+            "description": "哔哩哔哩（bilibili）直播是国内首家关注 ACG 直播的互动平台。\n它不一定最宅，但一定宅得最萌；\n不一定最污，但是一定污得最优雅。\n游戏，手办绘画，Cos 等想了解二次元的你一定不能错过 bilibili 直播",
+            "version": "1.0.0",
+            "author": {
+                "name": "1024-js"
+            },
+            "size": 25062,
+            "url": "a5ae5c73-d95f-4380-8f33-c3328462e1b3/1.0.0/B直播.dora",
+            "icon": "a5ae5c73-d95f-4380-8f33-c3328462e1b3/1.0.0/icon.png"
+        },
+        {
+            "displayName": "狗带TV",
+            "uuid": "86add9e4-5e28-497a-b7bc-c478af9b4aeb",
+            "description": "狗带TV：电影、电视剧、动漫、综艺",
+            "version": "1.1.0",
+            "author": {
+                "name": "1024-js"
+            },
+            "size": 3358,
+            "url": "86add9e4-5e28-497a-b7bc-c478af9b4aeb/1.1.0/狗带TV.dora",
+            "icon": "86add9e4-5e28-497a-b7bc-c478af9b4aeb/1.1.0/icon.png"
+        },
+        {
+            "displayName": "IPTV",
+            "uuid": "a363fa50-6c1b-4f3a-931a-44ee86c26abe",
+            "description": "列表节选自 GitHub 上超级🔥的 iptv-org/iptv 项目，包含数千个电视节目",
+            "version": "1.0.0",
+            "author": {
+                "name": "1024-js"
+            },
+            "size": 50261,
+            "url": "a363fa50-6c1b-4f3a-931a-44ee86c26abe/1.0.0/IPTV.dora",
+            "icon": "a363fa50-6c1b-4f3a-931a-44ee86c26abe/1.0.0/icon.svg"
+        }
+    ]
+}
