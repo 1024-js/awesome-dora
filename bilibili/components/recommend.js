@@ -17,9 +17,7 @@ module.exports = {
         author: {
           name: item.uname,
           avatar: item.face,
-          route: $route('@url', {
-            url: `https://space.bilibili.com/${item.uid}`
-          })
+          route: $route(`https://space.bilibili.com/${item.uid}`)
         },
         link: `https://live.bilibili.com${item.link}`,
         label: item.areaName,

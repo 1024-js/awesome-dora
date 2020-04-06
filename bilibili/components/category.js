@@ -2,7 +2,7 @@ module.exports = {
   type: 'list',
   async fetch({ page }) {
     page = page || 1
-    let url = `${endpoint}/v3/area/getRoomList?platform=web&parent_area_id=${this.args.parentId}&cate_id=0&area_id=${this.args.areaId}&sort_type=online&page=${page}&page_size=30&tag_version=1`;
+    let url = `${endpoint}/v3/area/getRoomList?platform=web&parent_area_id=${this.args.parentId}&cate_id=0&area_id=${this.args.areaId}&sort_type=online&page=${page}&page_size=30&tag_version=1`
     let response = await $http.get(url)
     let items = response.data.data.list
     let cover_type = $prefs.get('cover')
@@ -20,9 +20,7 @@ module.exports = {
           author: {
             name: item.uname,
             avatar: item.face,
-            route: $route('@url', {
-              url: `https://space.bilibili.com/${item.uid}`
-            })
+            route: $route(`https://space.bilibili.com/${item.uid}`)
           },
           label: item.area_name,
           viewerCount: item.online

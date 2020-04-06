@@ -1,13 +1,14 @@
 {
   "name": "dorajs-bililive",
-  "displayName": "B直播",
-  "version": "1.1.0",
+  "displayName": "B 直播",
+  "version": "1.2.0",
   "uuid": "a5ae5c73-d95f-4380-8f33-c3328462e1b3",
-  "description": "哔哩哔哩（bilibili）直播是国内首家关注 ACG 直播的互动平台。\n它不一定最宅，但一定宅得最萌；\n不一定最污，但是一定污得最优雅。\n游戏，手办绘画，Cos 等想了解二次元的你一定不能错过 bilibili 直播",
+  "description": "哔哩哔哩 (゜-゜)つロ 干杯~",
   "icon": "assets/icon.png",
   "prefs": "assets/prefs.json",
   "main": "main.js",
-  "license": "UNLICENSED",
+  "updates": "适配 Dora.js 1.4.0\n修复弹幕重新打开后无法加载弹幕的问题",
+  "license": "MIT",
   "author": {
     "name": "1024.js"
   },
@@ -17,7 +18,7 @@
   },
   "homepage": "",
   "engines": {
-    "dora": ">=1.0.0"
+    "dora": ">=1.4.0"
   },
   "keywords": [
     "Dora.js"

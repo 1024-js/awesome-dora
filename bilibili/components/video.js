@@ -1,15 +1,14 @@
 const qualityLevels = {
-  "1": "low",
-  "2": "super",
-  "3": "high",
-  "4": "blue"
+  '1': 'low',
+  '2': 'super',
+  '3': 'high',
+  '4': 'blue'
 }
-const DanmakuClient = require('bilibili-danmaku-client');
+const DanmakuClient = require('bilibili-danmaku-client')
 module.exports = {
   quality: null,
   line_id: 0,
   type: 'video',
-  // https://live.bilibili.com/5440
   async fetch({ args }) {
     let url = `${endpoint}/v1/Room/playUrl?cid=${args.roomId}&platform=android&otype=json`
     if (this.quality) {
@@ -17,14 +16,8 @@ module.exports = {
     }
     const resp = await $http.get(url)
     let data = resp.data.data
-    // return {
-    //     url: data.durl[line_id].url || data.durl[0].url,
-    //     clarify_level: qualityLevels[data.current_qn] || 'unknown',
-    //     line_id: line_id,
-
-    // }
     if (!data.quality_description) {
-      throw new Error("获取视频流信息失败 :(")
+      throw new Error('获取视频流信息失败 :(')
     }
     let clarifyIndex = 0
     let lineIndex = 0
@@ -36,7 +29,7 @@ module.exports = {
         // 'level': qualityLevels[quality.qn] || 'unknown',
         title: quality.desc,
         args: {
-          quality: quality.qn,
+          quality: quality.qn
         }
       }
     })
@@ -51,56 +44,63 @@ module.exports = {
         }
       }
     })
-    this.client = new DanmakuClient(parseInt(args.roomId));
     // this.client = new DanmakuClient(5441);
     return {
       url: data.durl[this.line_id].url || data.durl[0].url,
-      selectors: [{
-        title: "清晰度",
-        select: clarifyIndex,
-        options: clarifies,
-        onSelect: (option) => {
-          console.log(option)
-          this.quality = option.args.quality
-          this.refresh()
+      selectors: [
+        {
+          title: '清晰度',
+          select: clarifyIndex,
+          options: clarifies,
+          onSelect: option => {
+            console.log(option)
+            this.quality = option.args.quality
+            this.refresh()
+          }
+        },
+        {
+          title: '线路',
+          select: lineIndex,
+          options: lines,
+          onSelect: option => {
+            this.url = option.args.url
+          }
         }
-      }, {
-        title: "线路",
-        select: lineIndex,
-        options: lines,
-        onSelect: (option) => {
-          this.url = option.args.url
-        }
-      }]
+      ]
     }
   },
   startDanmaku() {
-    console.log(`startDanmaku: roomId=${this.args.roomId}`);
-    this.client.start();
+    console.log(`startDanmaku: roomId=${this.args.roomId}`)
+    if (this.client) {
+      this.client.terminate()
+    }
+    this.client = new DanmakuClient(parseInt(this.args.roomId))
+    this.client.start()
     this.client.on('event', ({ name, content }) => {
       switch (name) {
         case 'danmaku':
+          console.log(content)
           this.addDanmaku({
             nick: content.sender.name,
             uid: content.sender.uid,
             content: content.content
           })
-          break;
+          break
         case 'gift':
-          break;
+          break
       }
     })
-    this.client.on('open', () => console.log('Client opened.'));
-    this.client.on('close', () => console.log('Client closed.'));
-    this.client.on('error', () => console.log('Client error.'));
-    // this.client.on('event', () => console.log('Client event.'));
+    this.client.on('open', () => console.log('Client opened.'))
+    this.client.on('close', () => console.log('Client closed.'))
+    this.client.on('error', () => console.log('Client error.'))
   },
   stopDanmaku() {
     if (this.client) {
-      this.client.terminate();
+      this.client.terminate()
+      this.client = null
     }
   },
-  sendDanmaku(content) {
-    $ui.toast(`TODO: content=${content}`);
-  }
+  // sendDanmaku(content) {
+  //   $ui.toast(`TODO: content=${content}`)
+  // }
 }
