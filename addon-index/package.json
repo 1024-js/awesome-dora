@@ -1,0 +1,27 @@
+{
+  "name": "dorajs-index",
+  "displayName": "扩展检索",
+  "version": "1.0.0",
+  "uuid": "50c482bd-9a5a-480a-9f3c-3fb054485111",
+  "description": "扩展检索",
+  "icon": "assets/icon.svg",
+  "prefs": "assets/prefs.json",
+  "main": "main.js",
+  "license": "UNLICENSED",
+  "author": {
+    "name": "1024.js"
+  },
+  "engineStrick": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "",
+  "engines": {
+    "Dora.js": ">=1.5.1"
+  },
+  "keywords": [
+    "Dora.js"
+  ],
+  "dependencies": {}
+}
