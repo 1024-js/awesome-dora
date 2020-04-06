@@ -19,7 +19,7 @@ module.exports = {
           }),
           style: 'icon',
           link: `https://live.bilibili.com/p/eden/area-tags?parentAreaId=${this.args.id}&areaId=${item.id}`,
-          thumb: item.pic
+          image: item.pic
         }
       })
     }

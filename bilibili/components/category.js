@@ -15,7 +15,7 @@ module.exports = {
             roomId: item.roomid
           }),
           link: `https://live.bilibili.com${item.link}`,
-          thumb: cover_type == 'system' ? item.system_cover : item.user_cover,
+          image: cover_type == 'system' ? item.system_cover : item.user_cover,
           style: 'live',
           author: {
             name: item.uname,

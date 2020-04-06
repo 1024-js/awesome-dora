@@ -14,7 +14,7 @@ module.exports = {
         link: url,
         title: title,
         style: 'vod',
-        thumb: $('.fed-lazy', dl).attr('data-original'),
+        image: $('.fed-lazy', dl).attr('data-original'),
         summary: $('.fed-part-esan').text(),
         route: $route('episode', {
           url: url

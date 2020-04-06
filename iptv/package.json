@@ -1,7 +1,7 @@
 {
   "name": "dorajs-iptv",
   "displayName": "IPTV",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "uuid": "a363fa50-6c1b-4f3a-931a-44ee86c26abe",
   "description": "列表节选自 GitHub 上超级🔥的 iptv-org/iptv 项目，包含数千个电视节目",
   "icon": "assets/icon.svg",
@@ -9,7 +9,7 @@
   "main": "main.js",
   "license": "UNLICENSED",
   "author": {
-    "name": "1024-js"
+    "name": "1024.js"
   },
   "repository": {
     "type": "git",

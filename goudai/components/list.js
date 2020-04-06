@@ -12,7 +12,7 @@ module.exports = {
       items.push({
         link: url,
         style: 'vod',
-        thumb: link.attr('data-original'),
+        image: link.attr('data-original'),
         title: title,
         summary: $('.fed-list-desc', li).text(),
         label: $('span', link).text(),

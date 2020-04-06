@@ -1,7 +1,7 @@
 {
-  "name": "@dora-addon/bililive",
+  "name": "dorajs-bililive",
   "displayName": "B直播",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "uuid": "a5ae5c73-d95f-4380-8f33-c3328462e1b3",
   "description": "哔哩哔哩（bilibili）直播是国内首家关注 ACG 直播的互动平台。\n它不一定最宅，但一定宅得最萌；\n不一定最污，但是一定污得最优雅。\n游戏，手办绘画，Cos 等想了解二次元的你一定不能错过 bilibili 直播",
   "icon": "assets/icon.png",
@@ -9,7 +9,7 @@
   "main": "main.js",
   "license": "UNLICENSED",
   "author": {
-    "name": "1024-js"
+    "name": "1024.js"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,10 @@
     "dora": ">=1.0.0"
   },
   "keywords": [
-    "Dora",
-    "dora-addon"
+    "Dora.js"
+  ],
+  "categories": [
+    "video"
   ],
   "dependencies": {
     "bilibili-danmaku-client": "^2.0.0"

@@ -14,7 +14,7 @@ module.exports = {
         route: $route.video('video', {
           roomId: item.roomid
         }),
-        thumb: cover_type == 'system' ? item.system_cover : item.user_cover,
+        image: cover_type == 'system' ? item.system_cover : item.user_cover,
         author: {
           name: item.uname,
           avatar: item.face,

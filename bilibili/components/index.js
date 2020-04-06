@@ -21,10 +21,5 @@ module.exports = {
       items: items
     }
   },
-  created() {
-    this.actions = [{
-      title: '官方首页',
-      route: $route('https://bilibili.com')
-    }]
-  }
+  created() {}
 }
